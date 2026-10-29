@@ -1,0 +1,100 @@
+{
+ "tracker": "bytetrack",
+ "run": "kittimots_v26_reid_thr0.70",
+ "source": "kittimots",
+ "split": "val",
+ "detections": {
+  "version": "v26",
+  "weights": "runs/image_v26/checkpoints/image_v26_kittimots_e030.pth",
+  "source": "kittimots",
+  "split": "val",
+  "input": "1216x384",
+  "conf": 0.05,
+  "classes": [
+   "car",
+   "pedestrian"
+  ],
+  "epoch": 30,
+  "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "torch": "2.5.1+cu124",
+  "det_ms_median": 8.808608996332623,
+  "det_ms_p95": 9.033413007273339,
+  "params_M": 2.50458,
+  "reid_weights": "/home/minsoogo/Physical_AI/projects/dev3_mot_det_wide/runs/reid/reid_r18_kittimots.pth",
+  "reid_min_score": 0.1,
+  "reid_ms_median": 2.9127230644226074,
+  "reid_ms_p95": 4.835698127746582,
+  "reid_val": {
+   "car": {
+    "rank1": 0.946,
+    "mAP": 0.6400399259113395,
+    "queries": 500
+   },
+   "pedestrian": {
+    "rank1": 0.9644670050761421,
+    "mAP": 0.7508108430471819,
+    "queries": 197
+   },
+   "all": {
+    "rank1": 0.9483500717360115,
+    "mAP": 0.6632532977495614,
+    "queries": 697
+   }
+  }
+ },
+ "tracker_ms": {
+  "median": 0.2666549989953637,
+  "p95": 0.5956710083410144,
+  "frames": 2981
+ },
+ "detector_ms": {
+  "median": 8.808609008789062,
+  "p95": 9.03341293334961
+ },
+ "reid_ms": null,
+ "score_thr": 0.7,
+ "causal_check": null,
+ "per_class": {
+  "car": {
+   "HOTA": 0.47737610200147257,
+   "DetA": 0.3661608115688059,
+   "AssA": 0.6267700863487371,
+   "LocA": 0.8472128504465691,
+   "MOTA": 0.4334288205255947,
+   "MOTP": 0.8234859563583001,
+   "IDF1": 0.6055233549266962,
+   "IDSW": 9,
+   "Frag": 22,
+   "GT_IDs": null,
+   "CLR_TP": 3596,
+   "CLR_FN": 4433,
+   "CLR_FP": 107
+  },
+  "pedestrian": {
+   "HOTA": 0.0,
+   "DetA": 0.0,
+   "AssA": 0.0,
+   "LocA": 1.0,
+   "MOTA": 0.0,
+   "MOTP": 0.0,
+   "IDF1": 0.0,
+   "IDSW": 0,
+   "Frag": 0,
+   "GT_IDs": null,
+   "CLR_TP": 0,
+   "CLR_FN": 3347,
+   "CLR_FP": 0
+  }
+ },
+ "mean": {
+  "HOTA": 0.23868805100073628,
+  "DetA": 0.18308040578440296,
+  "AssA": 0.31338504317436855,
+  "LocA": 0.9236064252232845,
+  "MOTA": 0.21671441026279736,
+  "MOTP": 0.41174297817915007,
+  "IDF1": 0.3027616774633481,
+  "IDSW": 9,
+  "Frag": 22
+ }
+}
